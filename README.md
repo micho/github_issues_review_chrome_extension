@@ -20,11 +20,12 @@ This Chrome extension eases this flow.
 Whenever you load pull requests, the extension will note how many thumbs they have.
 When visiting the Issues page of your repository, you will see these votes counts.
 
-![Github Issues Review](http://cl.ly/image/351O13001810/content)
-
 - The thumb icon will appear next to issues you have already reviewed
 - A number will appear, indicating how many other people approved those pull requests
 - Any issues with more than two thumbs will appear with a green background
+
+![Github Issues Review](http://cl.ly/image/351O13001810/content)
+
 
 
 
