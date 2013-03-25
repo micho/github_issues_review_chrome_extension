@@ -35,10 +35,12 @@ $(function () {
   }
 
   saveVotesCount();
-  // Dirty, but it works: update when changing Issues filters
-  setInterval(function () {
-    saveVotesCount();
-  }, 500);
+  // Dirty, but it works: update after submitting a comment
+  $("form").submit(function () {
+    setTimeout(function () {
+      saveVotesCount();
+    }, 2000);
+  });
 
 });
 
