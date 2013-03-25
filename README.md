@@ -11,9 +11,11 @@ At Teambox we follow a Git release flow where:
 
 This Chrome extension eases this flow.
 
+
 ## How to install
 
-...
+[Install from the Chrome webstore](https://chrome.google.com/webstore/detail/github-pull-request-revie/almhmmbcihjjadclalgeejgllhboddgp), that's it.
+
 
 ## How it works
 
