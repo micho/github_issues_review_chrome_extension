@@ -23,6 +23,7 @@ When visiting the Issues page of your repository, you will see these votes count
 - The thumb icon (:+1:) will appear next to issues you have already reviewed
 - A number (`+ 1`, `+ 2`, etc) will appear, indicating how many other people approved those pull requests
 - Any issues with more than two thumbs will appear with a green background
+- Hover over the thumb or vote counter to see who reviewed this pull request
 
 ![Github Issues Review](http://cl.ly/image/351O13001810/content)
 
