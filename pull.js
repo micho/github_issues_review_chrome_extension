@@ -17,8 +17,7 @@
 
   // Count votes by others
   function usersWhoVoted() {
-    var voted_by = []
-      , my_username = $("#user-links a.name").text().trim();
+    var voted_by = [];
 
     $(".comment-header-author").each(function () {
       if ($(this).parents(".discussion-bubble-inner").find("img[title=':+1:']").length) {
