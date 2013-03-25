@@ -28,8 +28,17 @@ $(function () {
   }
 
   // Persist the array of users who voted
-  var hash = {};
-  hash[pr_key] = usersWhoVoted();
-  chrome.storage.sync.set(hash);
+  function saveVotesCount() {
+    var hash = {};
+    hash[pr_key] = usersWhoVoted();
+    chrome.storage.sync.set(hash);
+  }
+
+  saveVotesCount();
+  // Dirty, but it works: update when changing Issues filters
+  setInterval(function () {
+    saveVotesCount();
+  }, 500);
+
 });
 
