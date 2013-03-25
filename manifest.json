@@ -1,7 +1,7 @@
 {
   "manifest_version": 2
 , "name": "Github pull request review"
-, "version": "0.1.0"
+, "version": "0.1.2"
 , "homepage_url": "https://github.com/micho/github_issues_review_chrome_extension"
 , "description": "Github Issues peer review: track reviews and votes for pull requests"
 , "permissions": [

@@ -35,11 +35,17 @@ $(function () {
   }
 
   saveVotesCount();
+
   // Dirty, but it works: update after submitting a comment
   $("form").submit(function () {
     setTimeout(function () {
       saveVotesCount();
     }, 2000);
+  });
+
+  // Save when closing window
+  $(window).unload(function () {
+    saveVotesCount();
   });
 
 });
