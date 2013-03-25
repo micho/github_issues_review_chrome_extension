@@ -1,3 +1,5 @@
+/*globals chrome*/
+
 /**
  * When in the PR view, record if we see a :+1: from my user
  */

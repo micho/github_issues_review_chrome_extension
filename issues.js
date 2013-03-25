@@ -1,3 +1,5 @@
+/*globals chrome*/
+
 /**
  * Remember PRs I've seen and display them in the issues view
  */
