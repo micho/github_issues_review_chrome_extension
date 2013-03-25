@@ -24,7 +24,7 @@ $(function () {
       }
     });
 
-    return voted_by;
+    return _(voted_by).uniq();
   }
 
   // Persist the array of users who voted
