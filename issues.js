@@ -17,14 +17,10 @@ $(function () {
 
   function annotateIssues() {
     // For each issue, add an approval count
-    $(".js-issues-list").find("a.js-navigation-open").each(function () {
+    $(".js-issues-list").find("a.js-navigation-open:not(.already-annotated)").each(function () {
       var $a = $(this)
         , href = $a.attr('href');
 
-      // Don't process twice
-      if ($a.hasClass('already-annotated')) {
-        return;
-      }
       $a.addClass('already-annotated');
 
       // Get data from chrome.storage (which is populated by pull.js when viewing a PR)
