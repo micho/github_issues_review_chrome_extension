@@ -20,7 +20,7 @@
     var voted_by = [];
 
     $(".comment-header-author").each(function () {
-      if ($(this).parents(".discussion-bubble-inner").find("img[title=':+1:']").length) {
+      if ($(this).parents(".discussion-bubble-inner").find("img[title=':+1:'],img[title=':thumbsup:']").length) {
         voted_by.push($(this).text());
       }
     });
@@ -33,7 +33,6 @@
     var hash = {};
     hash[pr_key] = usersWhoVoted();
     chrome.storage.sync.get(pr_key, function (stored) {
-      console.log(hash[pr_key], stored[pr_key], hash[pr_key] !== stored[pr_key]);
       if (hash[pr_key] !== stored[pr_key]) {
         chrome.storage.sync.set(hash);
       }
